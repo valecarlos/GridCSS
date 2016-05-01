@@ -85,6 +85,7 @@ span{
 	width: calc(100% + 20px);
 	height: 100%;
 	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 	transition: all 0.4s ease-in-out;
 	transform: translateX(20px);
 	/*display: block;*/
@@ -125,10 +126,12 @@ span{
 
 .grayscale {
 	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .grid figure img:hover{
 	-webkit-filter: none; /*Returns to default state*/
+	filter: none;
 	transform: translateX(0px);
 }
 

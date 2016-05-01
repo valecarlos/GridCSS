@@ -1,4 +1,6 @@
-$(document).ready(function(){
+window.onLoad = slideIn();
+//$(document).ready(function(){
+	function slideIn(){
 	//loop through the different li elements once the doc is ready
 	$('.grid li').each(function(i)
 		 {
@@ -9,4 +11,4 @@ $(document).ready(function(){
 				 	$('.grid li').eq(i).addClass('show-content');
 				 }, 100 * (i+1));
 			});
-});
+}
